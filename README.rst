@@ -26,7 +26,7 @@ Usage
     import datetime
 
     from pymatriz.enums import MarketDataEntry, Market
-    from pymatriz.matriz_api_client import MatrizAPIClient
+    from pymatriz.client import MatrizAPIClient
 
     client = MatrizAPIClient(username="", password="")
 
