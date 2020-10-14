@@ -11,7 +11,7 @@ Installing
 
 .. code-block::
 
-   pip install -U pyRofex
+   pip install pymatriz
 
 
 API Credentials
