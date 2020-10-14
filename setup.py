@@ -5,7 +5,7 @@ with open("README.rst", "r") as fh:
 
 setup(
     name='pymatriz',
-    version='0.1.0',
+    version='0.1.1',
     packages=['pymatriz'],
     url='',
     license='MIT License',
@@ -19,7 +19,6 @@ setup(
         'websocket-client>=0.54.0',
         'pandas~=1.1.3',
         'lxml~=4.5.2',
-        'websocket~=0.2.1',
     ],
     classifiers=[
         "Programming Language :: Python :: 3",

@@ -11,7 +11,7 @@ Installing
 
 .. code-block::
 
-   pip install pymatriz
+   pip3 install pymatriz
 
 
 API Credentials
