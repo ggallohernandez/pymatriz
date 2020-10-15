@@ -21,7 +21,7 @@ Credentials provided by your broker which use Primary DMA (Matriz) platform.
 
 Usage
 ~~~~~~~~~~~~~~~~~
-.. code::
+.. code:: py
 
     import datetime
 
