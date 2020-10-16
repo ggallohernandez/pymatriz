@@ -11,8 +11,13 @@ Installing
 
 .. code-block::
 
-   pip3 install pymatriz
+   pip install pymatriz
 
+Also available in `Anaconda <https://anaconda.org/ggallohernandez/pymatriz>`_ repository. Install and update using `conda <https://docs.conda.io/projects/conda/en/latest/user-guide/getting-started.html>`_\ :
+
+.. code-block::
+
+    conda install pymatriz
 
 API Credentials
 ---------------
