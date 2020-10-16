@@ -136,9 +136,9 @@ class RestClient(ApiClient):
         responses = []
 
         start_date = datetime.fromordinal(kwargs["start_date"].toordinal()).isoformat("T") + "Z" \
-            if "start_date" in kwargs else (datetime.today() - timedelta(days=1)).isoformat("T") + "Z"
+            if "start_date" in kwargs else (datetime.utcnow() - timedelta(days=1)).isoformat("T") + "Z"
         end_date = datetime.fromordinal(kwargs["end_date"].toordinal()).isoformat("T") + "Z" \
-            if "end_date" in kwargs else (datetime.today()).isoformat("T") + "Z"
+            if "end_date" in kwargs else (datetime.utcnow() + timedelta(days=1)).isoformat("T") + "Z"
 
         instruments = self.build_instruments(tickers, **kwargs)
 
@@ -162,7 +162,7 @@ class RestClient(ApiClient):
             if HistoryFieldType.Time.value in df:
                 index.append(HistoryFieldType.Time.value)
 
-            df.set_index(index)
+            df.set_index(index, inplace=True)
 
         return df
 
